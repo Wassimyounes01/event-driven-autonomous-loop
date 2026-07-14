@@ -1,5 +1,5 @@
 {
-  "name": "relay",
+  "name": "event-driven-autonomous-loop",
   "version": "1.0.0",
   "description": "A starter kit that keeps an AI coding agent working — waking itself the moment each task finishes to pick up the next.",
   "license": "MIT",

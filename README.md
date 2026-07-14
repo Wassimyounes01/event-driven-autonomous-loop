@@ -1,10 +1,10 @@
-<!-- RELAY — white-label. No personal or company identifiers in this file by design. -->
+<!-- Event-Driven Autonomous Loop — white-label. No personal or company identifiers in this file by design. -->
 
 <p align="center">
-  <img src="assets/hero.svg" alt="RELAY" width="100%">
+  <img src="assets/hero.svg" alt="Event-Driven Autonomous Loop" width="100%">
 </p>
 
-<h1 align="center">🔁 RELAY</h1>
+<h1 align="center">🔁 Event-Driven Autonomous Loop</h1>
 
 <p align="center">
   <b>A starter kit that keeps an AI coding agent working — waking itself the moment each task finishes to pick up the next.</b><br>
@@ -23,9 +23,9 @@
 
 ---
 
-## Why RELAY
+## Why Event-Driven Autonomous Loop
 
-Autonomous agents stall the moment a task ends — they wait for a timer or a human. RELAY closes that gap: it models work as a durable on-disk queue with exactly one task in flight, and the completion of that task IS the signal to launch the next. A timer is only a safety net, never the driver. The result is a session that keeps making progress on a backlog of heavy work without idling.
+Autonomous agents stall the moment a task ends — they wait for a timer or a human. Event-Driven Autonomous Loop closes that gap: it models work as a durable on-disk queue with exactly one task in flight, and the completion of that task IS the signal to launch the next. A timer is only a safety net, never the driver. The result is a session that keeps making progress on a backlog of heavy work without idling.
 
 ---
 
@@ -68,7 +68,7 @@ node examples/demo.cjs
 cat docs/self-wake-pattern.md
 ```
 
-> RELAY is a pattern + reference implementation for agent harnesses (it pairs naturally with Claude Code's stop-hook and scheduled-wake). The queue driver is standalone and dependency-free; the hook is an example you adapt to your runtime.
+> Event-Driven Autonomous Loop is a pattern + reference implementation for agent harnesses (it pairs naturally with Claude Code's stop-hook and scheduled-wake). The queue driver is standalone and dependency-free; the hook is an example you adapt to your runtime.
 
 ---
 
@@ -98,4 +98,4 @@ relay/
 
 ---
 
-<p align="center"><sub>RELAY · queue · completion-wake · never idle · MIT</sub></p>
+<p align="center"><sub>Event-Driven Autonomous Loop · queue · completion-wake · never idle · MIT</sub></p>

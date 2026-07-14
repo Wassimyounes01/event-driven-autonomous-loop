@@ -1,13 +1,13 @@
 # The self-wake pattern
 
-RELAY keeps an autonomous agent working across a long backlog **without idling between tasks**.
+Event-Driven Autonomous Loop keeps an autonomous agent working across a long backlog **without idling between tasks**.
 The whole design rests on one inversion:
 
 > **Completion is the cadence. A timer is only a safety net.**
 
 Most "keep working" loops are timer-driven: do a task, sleep N seconds, wake, do the next.
 That wastes the gap (the agent sits idle until the timer fires) and couples throughput to a
-guessed interval. RELAY flips it — the *finishing* of one task is the event that launches the
+guessed interval. Event-Driven Autonomous Loop flips it — the *finishing* of one task is the event that launches the
 next, so there is no gap to waste.
 
 ## The two signals

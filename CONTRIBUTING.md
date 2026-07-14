@@ -1,6 +1,6 @@
-# Contributing to RELAY
+# Contributing to Event-Driven Autonomous Loop
 
-Thanks for your interest! RELAY is MIT-licensed and built to be forked, extended, and
+Thanks for your interest! Event-Driven Autonomous Loop is MIT-licensed and built to be forked, extended, and
 dropped into your own stack.
 
 ## Ground rules

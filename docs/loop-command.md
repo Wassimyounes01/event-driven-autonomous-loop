@@ -76,7 +76,7 @@ it's a backstop, not the driver.
 
 ## Seeding a backlog from code
 
-You don't need the slash command to use RELAY — the queue is a plain library:
+You don't need the slash command to use Event-Driven Autonomous Loop — the queue is a plain library:
 
 ```js
 const q = require('./lib/loop-queue.cjs');
