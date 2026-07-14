@@ -1,0 +1,26 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Syntax-check every .cjs / .js
+        run: |
+          shopt -s globstar nullglob
+          for f in **/*.cjs **/*.js; do
+            case "$f" in node_modules/*) continue;; esac
+            node --check "$f"
+          done
+      - name: Install (no secrets required)
+        run: npm install --no-audit --no-fund || true
+      - name: Test (runs against the zero-dependency echo path)
+        run: npm test

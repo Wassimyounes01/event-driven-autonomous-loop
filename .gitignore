@@ -1,0 +1,25 @@
+# Runtime state, secrets, and generated artifacts — never commit these
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+*.lock
+.sanitize-bak/
+
+# Auth / session material (regenerated locally, never shared)
+auth/
+*.session
+*.qr.png
+
+# Local data / caches
+memory/
+data/
+tmp/
+cache/
+*.pt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini

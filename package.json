@@ -1,0 +1,23 @@
+{
+  "name": "relay",
+  "version": "1.0.0",
+  "description": "A starter kit that keeps an AI coding agent working — waking itself the moment each task finishes to pick up the next.",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node lib/loop-queue.cjs --help >/dev/null 2>&1 || node -e \"require('./lib/loop-queue.cjs');console.log('ok')\"",
+    "check": "node --check lib/loop-queue.cjs && node --check hooks/stop-hook.cjs && echo ok"
+  },
+  "keywords": [
+    "autonomous-agent",
+    "event-loop",
+    "durable-queue",
+    "claude-code",
+    "self-continuation"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

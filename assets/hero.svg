@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-label="RELAY — A starter kit that keeps an AI coding agent working — waking itself the moment each task finishes to pick up the next.">
+  <defs>
+    <style>
+      :root { color-scheme: light dark; }
+      .bg    { fill: #0A0D12; }
+      .grid  { stroke: #8B7DF0; stroke-opacity: .07; }
+      .title { fill: #E6EDF3; font-family: ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace; font-weight: 700; }
+      .tag   { fill: #8B98A5; font-family: ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace; }
+      .accent{ fill: #8B7DF0; }
+      .chip  { fill: #11151d; stroke: #1e2733; }
+      .chipt { fill: #8B98A5; font-family: ui-monospace,monospace; }
+      @media (prefers-color-scheme: light) {
+        .bg { fill: #EEF3F1; } .title { fill: #0F1720; } .tag { fill: #4d5b57; }
+        .chip { fill: #ffffff; stroke: #dbe4df; } .chipt { fill: #4d5b57; } .grid { stroke-opacity: .10; }
+      }
+    </style>
+    <pattern id="g" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path class="grid" d="M44 0H0V44" fill="none" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect class="bg" width="1200" height="340"/>
+  <rect width="1200" height="340" fill="url(#g)"/>
+
+  <!-- accent bar -->
+  <rect class="accent" x="72" y="120" width="6" height="100" rx="3"/>
+
+  <!-- eyebrow -->
+  <text class="accent" x="98" y="108" font-family="ui-monospace,monospace" font-size="15" letter-spacing="6" font-weight="600">NEVER-IDLE AGENT LOOP KIT</text>
+
+  <!-- title -->
+  <text class="title" x="96" y="188" font-size="76">🔁 RELAY</text>
+
+  <!-- tagline -->
+  <text class="tag" x="98" y="232" font-size="22">A starter kit that keeps an AI coding agent working — waking itself the moment each task finishes to pick up the next.</text>
+
+  <!-- chips -->
+  <rect class="chip" x="96" y="272" width="156" height="30" rx="15"/>
+  <text class="chipt" x="109" y="292" font-size="13">autonomous-agent</text>
+  <rect class="chip" x="264" y="272" width="123" height="30" rx="15"/>
+  <text class="chipt" x="277" y="292" font-size="13">event-driven</text>
+  <rect class="chip" x="399" y="272" width="131" height="30" rx="15"/>
+  <text class="chipt" x="412" y="292" font-size="13">durable-queue</text>
+  <rect class="chip" x="542" y="272" width="98" height="30" rx="15"/>
+  <text class="chipt" x="555" y="292" font-size="13">self-wake</text>
+  <rect class="chip" x="652" y="272" width="114" height="30" rx="15"/>
+  <text class="chipt" x="665" y="292" font-size="13">claude-code</text>
+</svg>
