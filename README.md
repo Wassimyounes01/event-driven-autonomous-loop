@@ -72,6 +72,14 @@ cat docs/self-wake-pattern.md
 
 ---
 
+## See it run
+
+<p align="center">
+  <img src="assets/product.svg" alt="Event-Driven Autonomous Loop — product shot" width="100%">
+</p>
+
+---
+
 ## Repository layout
 
 ```
@@ -86,6 +94,19 @@ relay/
     ├── loop-command.md     ← the /loop-style command doc
     └── self-wake-pattern.md← the ~90s completion-wake cadence explained
 ```
+
+---
+
+## Concepts
+
+| Concept | Meaning |
+|---|---|
+| **Completion wake** | Finishing the in-flight task is the wake signal for the next one — the loop never sits on a timer while work exists. |
+| **Queue driver** | A durable on-disk work queue; one task in flight at a time; state survives restarts. |
+| **wait / launch / stop** | The only three answers the queue ever gives — there is no fourth state where the loop idles with work pending. |
+| **Refill** | Before stopping, the loop asks for more work once; stop only happens on a genuinely empty backlog. |
+| **Stop-hook** | A reference hook that continues the session on stop when the backlog isn't empty. |
+| **Hang-catcher** | The scheduled wake exists only to catch a silently-hung task — never to drive the cadence. |
 
 ---
 
